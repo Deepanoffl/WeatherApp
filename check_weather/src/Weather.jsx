@@ -20,6 +20,7 @@ const Weather = () => {
       );
       setLoadWeatherData(weatherDetails.data);
       setLoading(false);
+      setCityName("");
     } catch (err) {
       setLoadWeatherData(null);
       setErrorMsg("City not found !");
